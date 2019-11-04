@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A365ADA12365750100EDDE31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A365ADA02365750100EDDE31 /* AppDelegate.swift */; };
+		A365ADA32365750100EDDE31 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A365ADA22365750100EDDE31 /* art.scnassets */; };
+		A365ADA52365750100EDDE31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A365ADA42365750100EDDE31 /* ViewController.swift */; };
+		A365ADA82365750100EDDE31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A365ADA62365750100EDDE31 /* Main.storyboard */; };
+		A365ADAA2365750700EDDE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A365ADA92365750700EDDE31 /* Assets.xcassets */; };
+		A365ADAD2365750700EDDE31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A365ADAB2365750700EDDE31 /* LaunchScreen.storyboard */; };
+		A36DCCD1236DD672003A65B6 /* CardCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DCCD0236DD672003A65B6 /* CardCreateViewController.swift */; };
+		A3743CDE23701A89008D8E8C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3743CDD23701A89008D8E8C /* ShareViewController.swift */; };
+		A3743CE123701A89008D8E8C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3743CDF23701A89008D8E8C /* MainInterface.storyboard */; };
+		A3743CE523701A89008D8E8C /* powerpointtarget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A3743CDB23701A89008D8E8C /* powerpointtarget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3743CE323701A89008D8E8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A365AD952365750100EDDE31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3743CDA23701A89008D8E8C;
+			remoteInfo = powerpointtarget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A3743CE623701A89008D8E8C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A3743CE523701A89008D8E8C /* powerpointtarget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A365AD9D2365750100EDDE31 /* historycard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = historycard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A365ADA02365750100EDDE31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A365ADA22365750100EDDE31 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		A365ADA42365750100EDDE31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A365ADA72365750100EDDE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A365ADA92365750700EDDE31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A365ADAC2365750700EDDE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A365ADAE2365750700EDDE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A36DCCD0236DD672003A65B6 /* CardCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCreateViewController.swift; sourceTree = "<group>"; };
+		A3743CDB23701A89008D8E8C /* powerpointtarget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = powerpointtarget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3743CDD23701A89008D8E8C /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		A3743CE023701A89008D8E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A3743CE223701A89008D8E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3743CEA23701B1F008D8E8C /* historycard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = historycard.entitlements; sourceTree = "<group>"; };
+		A3743CEB237029CA008D8E8C /* powerpointtarget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = powerpointtarget.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A365AD9A2365750100EDDE31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3743CD823701A89008D8E8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A365AD942365750100EDDE31 = {
+			isa = PBXGroup;
+			children = (
+				A365AD9F2365750100EDDE31 /* historycard */,
+				A3743CDC23701A89008D8E8C /* powerpointtarget */,
+				A365AD9E2365750100EDDE31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A365AD9E2365750100EDDE31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A365AD9D2365750100EDDE31 /* historycard.app */,
+				A3743CDB23701A89008D8E8C /* powerpointtarget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A365AD9F2365750100EDDE31 /* historycard */ = {
+			isa = PBXGroup;
+			children = (
+				A3743CEA23701B1F008D8E8C /* historycard.entitlements */,
+				A365ADA02365750100EDDE31 /* AppDelegate.swift */,
+				A365ADA22365750100EDDE31 /* art.scnassets */,
+				A365ADA42365750100EDDE31 /* ViewController.swift */,
+				A365ADA62365750100EDDE31 /* Main.storyboard */,
+				A36DCCD0236DD672003A65B6 /* CardCreateViewController.swift */,
+				A365ADA92365750700EDDE31 /* Assets.xcassets */,
+				A365ADAB2365750700EDDE31 /* LaunchScreen.storyboard */,
+				A365ADAE2365750700EDDE31 /* Info.plist */,
+			);
+			path = historycard;
+			sourceTree = "<group>";
+		};
+		A3743CDC23701A89008D8E8C /* powerpointtarget */ = {
+			isa = PBXGroup;
+			children = (
+				A3743CEB237029CA008D8E8C /* powerpointtarget.entitlements */,
+				A3743CDD23701A89008D8E8C /* ShareViewController.swift */,
+				A3743CDF23701A89008D8E8C /* MainInterface.storyboard */,
+				A3743CE223701A89008D8E8C /* Info.plist */,
+			);
+			path = powerpointtarget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A365AD9C2365750100EDDE31 /* historycard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A365ADB12365750700EDDE31 /* Build configuration list for PBXNativeTarget "historycard" */;
+			buildPhases = (
+				A365AD992365750100EDDE31 /* Sources */,
+				A365AD9A2365750100EDDE31 /* Frameworks */,
+				A365AD9B2365750100EDDE31 /* Resources */,
+				A3743CE623701A89008D8E8C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3743CE423701A89008D8E8C /* PBXTargetDependency */,
+			);
+			name = historycard;
+			productName = historycard;
+			productReference = A365AD9D2365750100EDDE31 /* historycard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3743CDA23701A89008D8E8C /* powerpointtarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3743CE923701A89008D8E8C /* Build configuration list for PBXNativeTarget "powerpointtarget" */;
+			buildPhases = (
+				A3743CD723701A89008D8E8C /* Sources */,
+				A3743CD823701A89008D8E8C /* Frameworks */,
+				A3743CD923701A89008D8E8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = powerpointtarget;
+			productName = powerpointtarget;
+			productReference = A3743CDB23701A89008D8E8C /* powerpointtarget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A365AD952365750100EDDE31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "kazuki fujita";
+				TargetAttributes = {
+					A365AD9C2365750100EDDE31 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					A3743CDA23701A89008D8E8C = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = A365AD982365750100EDDE31 /* Build configuration list for PBXProject "historycard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A365AD942365750100EDDE31;
+			productRefGroup = A365AD9E2365750100EDDE31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A365AD9C2365750100EDDE31 /* historycard */,
+				A3743CDA23701A89008D8E8C /* powerpointtarget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A365AD9B2365750100EDDE31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A365ADA32365750100EDDE31 /* art.scnassets in Resources */,
+				A365ADAD2365750700EDDE31 /* LaunchScreen.storyboard in Resources */,
+				A365ADAA2365750700EDDE31 /* Assets.xcassets in Resources */,
+				A365ADA82365750100EDDE31 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3743CD923701A89008D8E8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3743CE123701A89008D8E8C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A365AD992365750100EDDE31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A365ADA52365750100EDDE31 /* ViewController.swift in Sources */,
+				A36DCCD1236DD672003A65B6 /* CardCreateViewController.swift in Sources */,
+				A365ADA12365750100EDDE31 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3743CD723701A89008D8E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3743CDE23701A89008D8E8C /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3743CE423701A89008D8E8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3743CDA23701A89008D8E8C /* powerpointtarget */;
+			targetProxy = A3743CE323701A89008D8E8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A365ADA62365750100EDDE31 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A365ADA72365750100EDDE31 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A365ADAB2365750700EDDE31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A365ADAC2365750700EDDE31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A3743CDF23701A89008D8E8C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3743CE023701A89008D8E8C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A365ADAF2365750700EDDE31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A365ADB02365750700EDDE31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A365ADB22365750700EDDE31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = historycard/historycard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F56QF5PVPM;
+				INFOPLIST_FILE = historycard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazukifujita.historycard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A365ADB32365750700EDDE31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = historycard/historycard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F56QF5PVPM;
+				INFOPLIST_FILE = historycard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazukifujita.historycard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A3743CE723701A89008D8E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = powerpointtarget/powerpointtarget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F56QF5PVPM;
+				INFOPLIST_FILE = powerpointtarget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazukifujita.historycard.powerpointtarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3743CE823701A89008D8E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = powerpointtarget/powerpointtarget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F56QF5PVPM;
+				INFOPLIST_FILE = powerpointtarget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kazukifujita.historycard.powerpointtarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A365AD982365750100EDDE31 /* Build configuration list for PBXProject "historycard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A365ADAF2365750700EDDE31 /* Debug */,
+				A365ADB02365750700EDDE31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A365ADB12365750700EDDE31 /* Build configuration list for PBXNativeTarget "historycard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A365ADB22365750700EDDE31 /* Debug */,
+				A365ADB32365750700EDDE31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3743CE923701A89008D8E8C /* Build configuration list for PBXNativeTarget "powerpointtarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3743CE723701A89008D8E8C /* Debug */,
+				A3743CE823701A89008D8E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A365AD952365750100EDDE31 /* Project object */;
+}

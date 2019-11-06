@@ -10,11 +10,16 @@ import UIKit
 import SceneKit
 import ARKit
 
+var isswip:Bool = false
+
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var saveExperienceButton: UIButton!
     @IBOutlet weak var loadExperienceButton: UIButton!
+    var selectnode : Card!
+    var menuView : myMenu!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +45,63 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             coachingOverlay.widthAnchor.constraint(equalTo: view.widthAnchor),
             coachingOverlay.heightAnchor.constraint(equalTo: view.heightAnchor)
         ])
+        
+        let layer = Layers()
+        layer.position = SCNVector3(0, 0, -3)
+        
+        let card = Card(UIImage(named: "ras")!)
+        let card2 = Card(UIImage(named: "ROUCON3")!)
+        
+        
+        layer.addcard(number: 0, card: card)
+        layer.addcard(number: 5, card: card2)
+        
+        sceneView.scene.rootNode.addChildNode(layer)
+        
+        
+        //gesture
+        let tapges = UILongPressGestureRecognizer(target: self, action: #selector(tap(_:)))
+        self.view.addGestureRecognizer(tapges)
+        
+        let tapges2 = UIPanGestureRecognizer(target: self, action: #selector(swip(_:)))
+        self.view.addGestureRecognizer(tapges)
+        self.view.addGestureRecognizer(tapges2)
+        
+        
+        //menu
+        
+        menuView = myMenu()
+        menuView.isHidden = true
+        self.view.addSubview(menuView)
+    }
+    
+    
+    @objc func tap(_ sender:UILongPressGestureRecognizer){
+        selectnode?.select()
+        let location = sender.location(in: sceneView)
+        let hitTestOptions = [SCNHitTestOption: Any]()
+        let results: [SCNHitTestResult] = sceneView.hitTest(location, options: hitTestOptions)
+        for result in results{
+            if let node = result.node as? Imagenode  {
+                if let parentnode = node.parent as? Card{
+                    parentnode.select()
+                    selectnode = parentnode
+                    menuView.setCard(selectnode)
+                    menuView.isHidden = false
+                    return
+                }
+                
+            }
+        }
+        selectnode = nil
+        
+    }
+    
+    @objc func swip(_ sender:UIPanGestureRecognizer){
+        if isswip{
+            let trans = sender.translation(in: self.view)
+            selectnode?.position = SCNVector3((selectnode?.position.x)! + Float(trans.x/700), (selectnode?.position.y)! - Float(trans.y/700), (selectnode?.position.z)! )
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -180,5 +242,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         isRelocalizingMap = false
         virtualObjectAnchor = nil
     }
+    
+
 
 }

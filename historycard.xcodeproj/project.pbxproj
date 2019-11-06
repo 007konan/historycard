@@ -17,6 +17,10 @@
 		A3743CDE23701A89008D8E8C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3743CDD23701A89008D8E8C /* ShareViewController.swift */; };
 		A3743CE123701A89008D8E8C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3743CDF23701A89008D8E8C /* MainInterface.storyboard */; };
 		A3743CE523701A89008D8E8C /* powerpointtarget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A3743CDB23701A89008D8E8C /* powerpointtarget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A3743CED2370567C008D8E8C /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3743CEC2370567C008D8E8C /* Layer.swift */; };
+		A3BCF2F82371080E00267CD0 /* setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BCF2F72371080E00267CD0 /* setting.swift */; };
+		A3BCF2FA2371091900267CD0 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BCF2F92371091900267CD0 /* Card.swift */; };
+		A3BCF2FC23710A6200267CD0 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BCF2FB23710A6200267CD0 /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		A3743CE223701A89008D8E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3743CEA23701B1F008D8E8C /* historycard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = historycard.entitlements; sourceTree = "<group>"; };
 		A3743CEB237029CA008D8E8C /* powerpointtarget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = powerpointtarget.entitlements; sourceTree = "<group>"; };
+		A3743CEC2370567C008D8E8C /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
+		A3BCF2F72371080E00267CD0 /* setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setting.swift; sourceTree = "<group>"; };
+		A3BCF2F92371091900267CD0 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A3BCF2FB23710A6200267CD0 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				A365ADA42365750100EDDE31 /* ViewController.swift */,
 				A365ADA62365750100EDDE31 /* Main.storyboard */,
 				A36DCCD0236DD672003A65B6 /* CardCreateViewController.swift */,
+				A3743CEC2370567C008D8E8C /* Layer.swift */,
+				A3BCF2F92371091900267CD0 /* Card.swift */,
+				A3BCF2FB23710A6200267CD0 /* Menu.swift */,
+				A3BCF2F72371080E00267CD0 /* setting.swift */,
 				A365ADA92365750700EDDE31 /* Assets.xcassets */,
 				A365ADAB2365750700EDDE31 /* LaunchScreen.storyboard */,
 				A365ADAE2365750700EDDE31 /* Info.plist */,
@@ -228,8 +240,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A365ADA52365750100EDDE31 /* ViewController.swift in Sources */,
+				A3BCF2FA2371091900267CD0 /* Card.swift in Sources */,
+				A3BCF2FC23710A6200267CD0 /* Menu.swift in Sources */,
+				A3BCF2F82371080E00267CD0 /* setting.swift in Sources */,
 				A36DCCD1236DD672003A65B6 /* CardCreateViewController.swift in Sources */,
 				A365ADA12365750100EDDE31 /* AppDelegate.swift in Sources */,
+				A3743CED2370567C008D8E8C /* Layer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F56QF5PVPM;
 				INFOPLIST_FILE = powerpointtarget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F56QF5PVPM;
 				INFOPLIST_FILE = powerpointtarget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

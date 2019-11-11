@@ -30,31 +30,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         sceneView.scene = SCNScene()
         
-        //coachingUIを使用
-        let coachingOverlay = ARCoachingOverlayView()
-        coachingOverlay.session = sceneView.session
-        coachingOverlay.translatesAutoresizingMaskIntoConstraints = false
-        coachingOverlay.activatesAutomatically = true
-        coachingOverlay.goal = .tracking
-        sceneView.addSubview(coachingOverlay)
-        
-        //画面の中心に表示させる為に入れています。
-        NSLayoutConstraint.activate([
-            coachingOverlay.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            coachingOverlay.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            coachingOverlay.widthAnchor.constraint(equalTo: view.widthAnchor),
-            coachingOverlay.heightAnchor.constraint(equalTo: view.heightAnchor)
-        ])
-        
         let layer = Layers()
         layer.position = SCNVector3(0, 0, -3)
         
-        let card = Card(UIImage(named: "ras")!)
-        let card2 = Card(UIImage(named: "ROUCON3")!)
+        let card = Card(front: UIImage(named:"ドイツ1939")!, right: UIImage(named: "ドイツ1939")!, left: UIImage(named:"ドイツ1939")!)
         
         
         layer.addcard(number: 0, card: card)
-        layer.addcard(number: 5, card: card2)
         
         sceneView.scene.rootNode.addChildNode(layer)
         
@@ -112,6 +94,22 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Run the view's session
         sceneView.session.run(configuration)
         
+        //coachingUIを使用
+        let coachingOverlay = ARCoachingOverlayView()
+        coachingOverlay.session = sceneView.session
+        coachingOverlay.translatesAutoresizingMaskIntoConstraints = false
+        coachingOverlay.activatesAutomatically = true
+        coachingOverlay.goal = .tracking
+        sceneView.addSubview(coachingOverlay)
+        
+        //画面の中心に表示させる為に入れています。
+        NSLayoutConstraint.activate([
+            coachingOverlay.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            coachingOverlay.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            coachingOverlay.widthAnchor.constraint(equalTo: view.widthAnchor),
+            coachingOverlay.heightAnchor.constraint(equalTo: view.heightAnchor)
+        ])
+        
         //特徴点
         sceneView.debugOptions = ARSCNDebugOptions.showFeaturePoints
     }
@@ -164,8 +162,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 let data = try NSKeyedArchiver.archivedData(withRootObject: map, requiringSecureCoding: true)
                 try data.write(to: self.mapSaveURL, options: [.atomic])
                 DispatchQueue.main.async {
-                    self.loadExperienceButton.isHidden = false
-                    self.loadExperienceButton.isEnabled = true
+//                    self.loadExperienceButton.isHidden = false
+//                    self.loadExperienceButton.isEnabled = true
                 }
             } catch {
                 fatalError("Can't save map: \(error.localizedDescription)")

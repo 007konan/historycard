@@ -11,10 +11,25 @@ import ARKit
 import UIKit
 class Imagenode:SCNNode
 {
-    init(_ img:UIImage) {
+    init(front:UIImage, right:UIImage, left:UIImage) {
         super.init()
-        let inner_plane = SCNPlane(width: cardsize, height: cardsize)
-        inner_plane.firstMaterial?.diffuse.contents = img
+        let inner_plane = SCNBox(width: cardsize, height: cardsize, length: cardsize, chamferRadius: 0)
+        // 6面、別々のテクスチャを貼る
+        let m1 = SCNMaterial()
+        let m2 = SCNMaterial()
+        let m3 = SCNMaterial()
+        let m4 = SCNMaterial()
+        let m5 = SCNMaterial()
+        let m6 = SCNMaterial()
+
+        m1.diffuse.contents = front
+        m2.diffuse.contents = right
+        m3.diffuse.contents = UIImage(named: "white.png")
+        m4.diffuse.contents = left
+        m5.diffuse.contents = UIImage(named: "white.png")
+        m6.diffuse.contents = UIImage(named: "white.png")
+
+        inner_plane.materials = [m1, m2, m3, m4, m5, m6]
         super.geometry = inner_plane
         
     }
@@ -27,12 +42,12 @@ class Imagenode:SCNNode
 class Card :SCNNode{
     private var isselect :Bool!
     public var image:UIImage!
-    init(_ img:UIImage) {
+    init(front:UIImage, right:UIImage, left:UIImage) {
         super.init()
-        self.image = img
+        self.image = front
         isselect = false
         //画像入れるnode
-        let inner_node = Imagenode(img)
+        let inner_node = Imagenode(front: front, right: right, left: left)
         inner_node.position = SCNVector3(0, 0, 0.002)
         //枠線用のnode
         let outter_plane = SCNPlane(width: cardsize * 1.04, height: cardsize * 1.04)
